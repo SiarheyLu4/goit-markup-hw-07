@@ -1,0 +1,74 @@
+:root {
+  --first-color: #2196f3;
+  --second-color: #000000;
+  --third-color: #212121;
+  --fourth-color: #757575;
+  --fifth-color: #ffffff;
+  --sixth-color: rgba(255, 255, 255, 0.6);
+  --seventh-color: #2f303a;
+  --eighth-color: #188ce8;
+  --ninth-color: #f5f4fa;
+  --tenth-color: #ececec;
+  --eleventh-color: rgba(0, 0, 0, 0.15);
+  --twelfth-color: #eeeeee;
+  --icon-color: #afb1b8;
+  --icon-bgcolor: #44454e;
+  --transition-dur-tim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--third-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--fifth-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid rgb(248, 6, 6); */
+}
+/*# sourceMappingURL=main.css.map */
