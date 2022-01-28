@@ -1,15 +1,15 @@
-.qualities-list {
+.qualities__list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
 }
 
-.qualities-item {
+.qualities__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 }
 
-.qualities-item-icon-box {
+.qualities__box {
   display: flex;
   width: 270px;
   height: 120px;
@@ -20,14 +20,14 @@
   margin-bottom: 30px;
 }
 
-.qualities-item-title {
+.qualities__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 
   margin-bottom: 10px;
 }
-.qualities-item-text {
+.qualities__text {
   line-height: 1.71;
   color: var(--fourth-color);
 }

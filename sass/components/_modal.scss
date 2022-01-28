@@ -26,7 +26,7 @@
   padding: 40px;
 }
 
-.modal-close {
+.modal__close {
   width: 30px;
   height: 30px;
   background-color: var(--fifth-color);
@@ -52,7 +52,7 @@
   pointer-events: none;
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -66,17 +66,14 @@
   flex-direction: column;
 }
 
-.label-field {
+.form__label {
   margin-bottom: 10px;
 }
-.label-field-comment {
-  margin-bottom: 20px;
-}
 
-.label-name,
-.label-tel,
-.label-email,
-.label-comment {
+.form__name,
+.form__tel,
+.form__email,
+.comment__label {
   display: block;
   font-weight: 400;
   font-size: 12px;
@@ -86,7 +83,7 @@
   margin-bottom: 4px;
 }
 
-.form-input {
+.form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -96,20 +93,21 @@
   transition: border-color var(--transition-dur-tim);
   &:focus-within {
     border-color: var(--first-color);
-    & + .icon-name,
-    & + .icon-tel,
-    & + .icon-email {
+    & + .name__icon,
+    & + .tel__icon,
+    & + .email__icon {
       fill: var(--first-color);
     }
   }
 }
 
-.form-comment {
+.comment__text {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
+  margin-bottom: 20px;
   resize: none;
   outline: none;
   transition: border-color var(--transition-dur-tim);
@@ -125,12 +123,14 @@
   }
 }
 
-.form-input-div {
+.name,
+.tel,
+.email {
   position: relative;
 }
-.icon-name,
-.icon-tel,
-.icon-email {
+.name__icon,
+.tel__icon,
+.email__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -138,7 +138,7 @@
   transition: fill var(--transition-dur-tim);
 }
 
-.form-checkbox {
+.checkbox__input {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -149,7 +149,7 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-  &:checked + .icon-checkbox {
+  &:checked + .checkbox__icon {
     background-color: var(--first-color);
     background-image: url(../images/icon-check.svg);
     background-size: contain;
@@ -158,7 +158,7 @@
   }
 }
 
-.label-checkbox {
+.checkbox {
   width: 425px;
   font-weight: 400;
   line-height: 1.71;
@@ -169,7 +169,7 @@
   justify-content: space-between;
 }
 
-.icon-checkbox {
+.checkbox__icon {
   width: 15px;
   height: 15px;
   border: 2px solid var(--third-color);
@@ -177,11 +177,11 @@
   margin-right: 8px;
 }
 
-.link-checkbox {
+.checkbox__link {
   text-decoration: underline;
   color: var(--first-color);
 }
 
-.form-button {
+.form__button {
   margin: 0 auto;
 }
